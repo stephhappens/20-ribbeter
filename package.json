@@ -6,7 +6,7 @@
     "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x \"node --harmony\" server.js",
     "start": "node --harmony server.js",
     "assets:build": "ember build -o public/dist",
-   "assets:watch": "ember build -w -o public/dist",
+    "assets:watch": "ember build -w -o public/dist",
     "lint": "standard"
   },
   "author": "",
@@ -41,6 +41,7 @@
     "font-awesome": "^4.6.3",
     "normalize-css": "^2.3.1",
     "sass-lint": "^1.9.1",
+    "sqlite3": "^3.1.8",
     "standard": "^8.4.0",
     "whatwg-fetch": "^1.0.0",
     "yoga-sass": "^1.0.1",
