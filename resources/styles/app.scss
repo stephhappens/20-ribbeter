@@ -1,8 +1,58 @@
 // @import 'yoga-sass/assets/yoga';
 // @import 'normalize-css/normalize';
+$brandprimary: #93CA62;
+$brandsecondary: #EDF7F2;
+$brandwhite: #FFFFFF;
+$brandaccent: #4AB5BD;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome/scss/font-awesome';
 @import 'box-sizing';
+@import 'register';
 
-@import 'adonis';
+.fullpage  {
+  min-height: 100vh;
+  background: $brandsecondary;
+  font-family: 'Dosis', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  padding: 1rem;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbar_container {
+  display: flex;
+  width: 100%;
+}
+
+.navbar {
+  margin: 0;
+  background: $brandprimary;
+  color: $brandwhite;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  padding: .7rem;
+
+  &__linklist {
+    display: flex;
+    margin: 0 1rem;
+  }
+
+  &__links {
+    text-decoration: none;
+    color: $brandwhite;
+    margin-left: .5rem;
+  }
+}
