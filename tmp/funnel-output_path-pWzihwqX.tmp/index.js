@@ -1,1 +1,0 @@
-/Users/Stephanie/Ironyard/week-07/20-ribbeter/tmp/funnel-input_base_path-CfhUI1pJ.tmp/0/index.js
