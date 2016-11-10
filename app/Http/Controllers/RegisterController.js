@@ -4,10 +4,6 @@ const User = use('App/Model/User');
 const Hash = use('Hash');
 
 class RegisterController {
-  //
-  // * index(request, response) {
-  //   //
-  // }
 
   * create(request, response) {
     yield response.sendView('user.create');
@@ -39,23 +35,6 @@ class RegisterController {
       response.redirect('back');
     }
   }
-
-  // * show(request, response) {
-  //   //
-  // }
-  //
-  // * edit(request, response) {
-  //   //
-  // }
-  //
-  // * update(request, response) {
-  //   //
-  // }
-  //
-  // * destroy(request, response) {
-  //   //
-  // }
-
 }
 
 module.exports = RegisterController;

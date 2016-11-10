@@ -17,7 +17,7 @@
 
 const Route = use('Route');
 
-Route.on('/').render('layout');
+Route.on('/').render('layout').middleware('auth');
 
 Route.get('/register', 'RegisterController.create');
 Route.post('/register', 'RegisterController.store');

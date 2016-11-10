@@ -2,14 +2,11 @@
 
 {% block content %}
 
-{{ form.open({ action: 'RegisterController.store'}) }}
- {{ csrfField }}
-
-  <form class="create-user" action="index.html" method="post">
-
+{# <form class="create-user" method="post"> #}
+    {{ form.open({ action: 'RegisterController.store'}) }}
     {# <div class="section">
       <div class="container"> #}
-
+            {{ csrfField }}
         <div class="container__form">
         <h2 class= "container__form-header">Create an Account</h2>
 
@@ -41,5 +38,5 @@
   {# </div>
   </div> #}
 {{ form.close() }}
-  </form>
+  {# </form> #}
 {% endblock %}

@@ -24,6 +24,19 @@
 
         <div class="section">
           <div class="container">
+
+            {% if old('error') %}
+        <div class="alert">
+          <p> {{ old('error') }}  </p>
+        </div>
+      {% endif %}
+
+      {% if old('success') %}
+        <div class="alert">
+          <p>{{ old('success') }}</p>
+        </div>
+      {% endif %}
+
             {% block content %}
 
               {% endblock %}
