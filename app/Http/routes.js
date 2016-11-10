@@ -21,3 +21,10 @@ Route.on('/').render('layout').middleware('auth');
 
 Route.get('/register', 'RegisterController.create');
 Route.post('/register', 'RegisterController.store');
+
+Route.get('/login', 'LoginController.create');
+Route.post('/login', 'LoginController.store');
+
+Route.any('/logout', 'LoginController.destroy');
+
+Route.get('/user.html', 'UserController.store').middleware('auth');
