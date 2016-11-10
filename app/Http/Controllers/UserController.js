@@ -5,9 +5,9 @@ const UserModel = use('App/Model/User');
 class UserController {
 
   * index(request, response) {
-    const user = yield UserModel.all();
+    const users = yield UserModel.all();
 
-    response.send(user);
+    yield response.sendView('user.index', { users: users.toJSON() });
   }
 
   * create(request, response) {

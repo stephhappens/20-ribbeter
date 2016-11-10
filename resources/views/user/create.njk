@@ -2,10 +2,7 @@
 
 {% block content %}
 
-{# <form class="create-user" method="post"> #}
     {{ form.open({ action: 'RegisterController.store'}) }}
-    {# <div class="section">
-      <div class="container"> #}
             {{ csrfField }}
         <div class="container__form">
         <h2 class= "container__form-header">Create an Account</h2>

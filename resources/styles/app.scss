@@ -6,9 +6,11 @@ $brandwhite: #FFFFFF;
 $brandaccent: #4AB5BD;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-@import 'font-awesome/scss/font-awesome';
+@import 'scss/font-awesome';
 @import 'box-sizing';
 @import 'register';
+// @import 'error';
+@import 'users';
 
 .fullpage  {
   min-height: 100vh;

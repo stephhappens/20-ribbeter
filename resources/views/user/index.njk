@@ -1,0 +1,22 @@
+{% extends "layout" %}
+
+{% block content %}
+
+  <div class="section_users">
+    <div class="container_users">
+      <h1 class="users"> Users </h1>
+      <div class="grid">
+        {% for item in users %}
+        <div class="grid__item">
+          <img src="http://fillmurray.com/g/200/300" class= "user_profile-pic"alt="bill murray" />
+          <div class="grid__item-text">
+          <div class="grid__item-name"> ${{ item.username }} </div>  {# //! TO DO: add first name and last name to form/controller // #}
+          <div class="grid__item-email"> {{ item.email }} </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

@@ -27,4 +27,4 @@ Route.post('/login', 'LoginController.store');
 
 Route.any('/logout', 'LoginController.destroy');
 
-Route.get('/user.html', 'UserController.store').middleware('auth');
+Route.get('/users', 'UserController.index').middleware('auth');
