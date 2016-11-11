@@ -1,19 +1,12 @@
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome/scss/font-awesome';
-// @import 'box-sizing';
-// @import 'reset';
-//
-//
-
 .create-user {
   display: flex;
   justify-content: center;
 }
 
-.form-control{
+.form-control {
   border: none;
-  border-bottom: .2rem solid $brandaccent;
-  margin: .2rem 0;
+  border-bottom: 0.2rem solid $brandaccent;
+  margin: 0.2rem 0;
 }
 
 .form-group {
@@ -21,13 +14,11 @@
   flex-direction: column;
 
   border: none;
-  margin: .2rem;
+  margin: 0.2rem;
 }
 
 .container__form {
   background: $brandwhite;
-  // display: flex;
-  // flex-direction: column;
   width: 32rem;
   box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
   margin: 4rem;
@@ -35,7 +26,7 @@
   &-header {
     background: $brandprimary;
     color: $brandwhite;
-    padding: .2rem;
+    padding: 0.2rem;
     margin: 0;
   }
 }
@@ -48,8 +39,8 @@
   &_signup {
     background: $brandprimary;
     color: $brandwhite;
-    padding: .2rem;
-    margin: .5rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
     border: none;
     font-size: 1rem;
   }
@@ -57,8 +48,8 @@
   &_login {
     background: $brandsecondary;
     color: $brandaccent;
-    padding: .2rem;
-    margin: .5rem;
+    padding: 0.2rem;
+    margin: 0.5rem;
     border: none;
     font-size: 1rem;
   }

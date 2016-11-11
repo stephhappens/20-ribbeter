@@ -4,15 +4,16 @@ $brandprimary: #93CA62;
 $brandsecondary: #EDF7F2;
 $brandwhite: #FFFFFF;
 $brandaccent: #4AB5BD;
+$c-danger: #de6363;
 
 $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'scss/font-awesome';
 @import 'box-sizing';
 @import 'register';
-// @import 'error';
+@import 'error';
 @import 'users';
 
-.fullpage  {
+.fullpage {
   min-height: 100vh;
   background: $brandsecondary;
   font-family: 'Dosis', sans-serif;
@@ -45,7 +46,7 @@ ul {
   flex-direction: row;
   flex-grow: 1;
   justify-content: space-between;
-  padding: .7rem;
+  padding: 0.7rem;
 
   &__linklist {
     display: flex;
@@ -55,6 +56,11 @@ ul {
   &__links {
     text-decoration: none;
     color: $brandwhite;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
   }
+}
+
+.container_flex {
+  display: flex;
+  justify-content: center;
 }

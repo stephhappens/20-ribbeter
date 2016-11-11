@@ -4,6 +4,7 @@
 
     {{ form.open({ action: 'RegisterController.store'}) }}
             {{ csrfField }}
+        <div class="container_flex">
         <div class="container__form">
         <h2 class= "container__form-header">Create an Account</h2>
 
@@ -29,6 +30,7 @@
 
   <div class="button_signup">
     {{ form.submit('Sign Up', null, { class: 'button_signup'}) }}
+  </div>
   </div>
   </div>
   </div>

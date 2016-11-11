@@ -3,6 +3,7 @@
 {{ form.open({ action: 'LoginController.store'}) }}
 
         {{ csrfField }}
+    <div class="container_flex">
     <div class="container__form">
     <h2 class= "container__form-header">Login to your Ribbiter</h2>
 
@@ -24,7 +25,7 @@
 </div>
 
 </div>
-
+</div>
 {{ form.close() }}
 
 {% endblock %}
