@@ -17,7 +17,18 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   routes,
-  base: '/app'
+  base: '/app',
 });
 
-const app = new Vue({ ...App, router }).$mount('.vue-app');
+if (document.querySelector('.vue-app')) {
+  const app = new Vue({ ...App, router }).$mount('.vue-app');
+}
+
+window.setTimeout(() => {
+  // find elment with class alert
+  const alert = document.querySelector('.alert');
+
+  if (alert) {
+    alert.remove();
+  }
+}, 4000);
