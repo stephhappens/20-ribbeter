@@ -1,0 +1,46 @@
+.section_users {
+  padding: 1rem;
+}
+
+.container_users {
+  margin: 0 auto;
+}
+
+.users {
+  border-bottom: 0.1rem solid $brandaccent;
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  margin: -1rem;
+
+  &__item {
+    display: flex;
+    flex-basis: calc(100% / 3 - 1rem - 1rem);
+    flex-wrap: wrap;
+    margin: 1rem;
+    background: $brandwhite;
+    box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      margin-top: 0.8rem;
+    }
+  }
+}
+
+.grid__item-name {
+  font-size: 1.5rem;
+}
+
+.grid__item-email {
+  color: $brandaccent;
+}
+
+.user_profile-pic {
+  width: 10rem;
+  height: 10rem;
+}

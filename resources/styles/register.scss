@@ -1,0 +1,56 @@
+.create-user {
+  display: flex;
+  justify-content: center;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 0.2rem solid $brandaccent;
+  margin: 0.2rem 0;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  border: none;
+  margin: 0.2rem;
+}
+
+.container__form {
+  background: $brandwhite;
+  width: 32rem;
+  box-shadow: 0.2rem 0.2rem 0.4rem rgba(#000, 0.4);
+  margin: 4rem;
+
+  &-header {
+    background: $brandprimary;
+    color: $brandwhite;
+    padding: 0.2rem;
+    margin: 0;
+  }
+}
+
+.button {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+
+  &_signup {
+    background: $brandprimary;
+    color: $brandwhite;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border: none;
+    font-size: 1rem;
+  }
+
+  &_login {
+    background: $brandsecondary;
+    color: $brandaccent;
+    padding: 0.2rem;
+    margin: 0.5rem;
+    border: none;
+    font-size: 1rem;
+  }
+}

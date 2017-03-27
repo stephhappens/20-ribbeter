@@ -1,0 +1,41 @@
+{% extends "layout" %}
+
+{% block content %}
+
+    {{ form.open({ action: 'RegisterController.store'}) }}
+            {{ csrfField }}
+        <div class="container_flex">
+        <div class="container__form">
+        <h2 class= "container__form-header">Create an Account</h2>
+
+    <div class="form-group">
+      {{ form.label('username', 'Choose a username') }}
+      {{ form.text('username', null, {class: 'form-control', placeholder: 'BigHoppa' }) }}
+    </div>
+
+    <div class="form-group">
+      {{ form.label('email', 'Enter your email address') }}
+      {{ form.text('email', null, {class: 'form-control', placeholder: 'jiminycricket@comcast.net' }) }}
+    </div>
+
+    <div class="form-group">
+      {{ form.label('password', 'Choose a strong password') }}
+      {{ form.password('password', null, {class: 'form-control', placeholder: 'Bugjuice99' }) }}
+    </div>
+
+  <div class="button">
+    <div class="button_login">
+    {{ form.submit('Login', null, { class: 'button_login'}) }}
+  </div>
+
+  <div class="button_signup">
+    {{ form.submit('Sign Up', null, { class: 'button_signup'}) }}
+  </div>
+  </div>
+  </div>
+  </div>
+  {# </div>
+  </div> #}
+{{ form.close() }}
+  {# </form> #}
+{% endblock %}
